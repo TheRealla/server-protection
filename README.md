@@ -49,3 +49,17 @@ Ideal for:
 ```bash
 # One-liner (downloads and runs the latest version)
 curl -sSL https://raw.githubusercontent.com/TheRealla/server-protection/main/install.sh | sudo bash
+
+
+Manual / development method:
+git clone https://github.com/TheRealla/server-protection.git
+cd server-protection
+
+# Optional: review / edit defaults
+nano config/defaults.conf
+
+# Full interactive run
+sudo bash main.sh
+
+# Non-interactive (uses config defaults)
+sudo bash main.sh --non-interactive
